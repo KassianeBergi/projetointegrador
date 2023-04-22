@@ -19,6 +19,21 @@
     width: 100%;
     list-style: none;
 }
+.tempo{
+    top: 150px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+#data-hora {
+    height: 60px;
+    width: 300px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #67aa53;
+    color:rgb(0, 0, 0);
+}
 
 a{ /* tirar a linha de baixo das listas */
     text-decoration: none;
@@ -28,7 +43,7 @@ a{ /* tirar a linha de baixo das listas */
 body{ /* caracteres do menu  */
     top: 60px;
     font-family: Arial;
-    background-color: rgba(146,204,221) ;
+    background-color: rgb(255, 255, 255) ;
 }
 
 input[type="checkbox"]  /* efeito do menu */
