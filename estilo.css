@@ -9,7 +9,7 @@
     height: 60px;
 }
 
-.logo{ /* direcionar a logo ao lado das três barras  */
+.logo{ /* direcionar da logo */
     padding-left: 60px;
 }
 
@@ -19,20 +19,8 @@
     width: 100%;
     list-style: none;
 }
-.tempo{
-    top: 150px;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-}
-
-#data-hora {
-    height: 60px;
-    width: 300px;
-    padding-left: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #67aa53;
-    color:rgb(0, 0, 0);
+main{
+    height: 1080px;
 }
 
 a{ /* tirar a linha de baixo das listas */
@@ -46,15 +34,16 @@ body{ /* caracteres do menu  */
     background-color: rgb(255, 255, 255) ;
 }
 
-input[type="checkbox"]  /* efeito do menu */
+
+input[type="checkbox"]  
 {
     display: none;
 }
 
-input[type="checkbox"]:checked ~ nav  /* efeito do menu */
+input[type="checkbox"]:checked ~ nav  
 {
     transform: translateX(350px);
-}
+} 
 
 nav{ /* efeito do menu */
     background-color:rgba(160, 172, 170, 0.432);
@@ -77,28 +66,192 @@ nav{ /* efeito do menu */
 }
 
 label{ /* efeito do menu */
-    padding: 15px;
+    padding: 20px;
     position: absolute;
     z-index: 1;
+} 
+
+#icone{
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+    color: rgb(255, 255, 255);
 }
-.meio{ /* posicionamento do meio da tela */
-    padding: 40%;
+#icone::after, #icone::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 7px;
+    transition: 0.7s;
+    position: relative;
 }
+#nav.active #icone {
+    border-top-color: transparent;
+}
+#nav.active #icone::before {
+    transform: rotate(135deg);
+}
+#nav.active #icone::after {
+    transform: rotate(-135deg);
+}
+
+.tempo{
+    top: 150px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+#data-hora {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 300px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    color:rgb(0, 0, 0);
+}
+
+.estacionamento-urls{
+    right: 250px;
+}
+
+.estacionamento {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+    width: 630px;
+    height: 324px;
+    border:  3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 254, 254);
+    padding: 2px;
+    padding-top: 220px;
+    border-left-style: initial;
+    border-top-style: initial;
+}
+
+.vaga-superior{
+    display: inline-block;
+    width: 70px;
+    height: 95px;
+    border: 1px solid #4d4e44;
+    margin: 2px;
+    margin-top: initial; 
+    background-color: #e0e3e6;
+    border-bottom-style: hidden;
+    border-style: dashed;
+    text-align:justify;
+}
+
+/* .vaga-moto{
+    display: inline-flex;
+    width: 70px;
+    height: 95px;
+    border: 2px solid #dde2ea;
+    background-color: #edf0f4;
+    border-bottom-style: hidden;
+    border-style: dashed;
+    text-align:justify;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;   
+}  */
+
+.estacionamento ul li a{
+    margin-right: 100px;
+    text-decoration: none;
+    color: rgba(75, 74, 74, 0.425);
+    margin-left: 20px;
+}
+.estacionamento-id{
+    margin-top: 110px;
+    margin-bottom: 250px;
+    margin-left: 100px;
+    width: 630px;
+    height: 117px;
+    border:  3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 254, 254);
+    padding: 2px;
+    padding-bottom: 300px;
+    border-left-style: initial;
+    border-bottom-style: initial;
+} 
+.vaga-inferior{
+    display: inline-block;
+    width: 70px;
+    height: 95px;
+    border: 1px solid #4d4e44;
+    margin: 1px;
+    margin-top: 5px; 
+    background-color: #e0e3e6;
+    border-bottom-style: hidden;
+    border-style: dashed;
+    text-align:justify;
+}
+.estacionamento-id ul li a{
+    margin: 5px;
+    width: auto;
+    text-decoration: none;
+    color: rgba(75, 74, 74, 0.425);
+    margin-left: 20px;
+}
+.estacionamento-se{
+   
+} 
+.estacionamento-se{
+    margin-top: 229px;
+    margin-left: 500px;
+    margin-bottom: 250px;
+    width: 630px;
+    height: 117px;
+    border:  2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 254, 254);
+    padding: 2px;
+    padding-bottom: 250px;
+    border-right-style: initial;
+    border-top-style: initial;
+}  */
+.vagasuperioresquerda{
+    display: inline-block;
+    width: 70px;
+    height: 95px;
+    border: 2px solid #dde2ea;
+    margin: 5px;
+    margin-top: initial; 
+    background-color: #edf0f4;
+    border-bottom-style: hidden;
+    border-style: dashed;
+    text-align:justify;
+}
+.estacionamento-se ul li a{
+    margin: 5px;
+    width: auto;
+    text-decoration: none;
+    color: rgba(151, 149, 149, 0.425);
+    margin-left: 20px;
+}   
 
 footer{ /* dimensoes do rodape */
     height: 100%;
     background-color: black;
     padding-top: 8px;
-    padding-bottom: 50px;  
+    padding-bottom: 25px;  
 }
+
 p{ /* estilo do p */
     color: white;
     padding-left:8px;
+    text-align: center;
 }
 
 ul.lista{
     text-align: center;
 }
+
 .itens a{
     position: relative;
     padding-left: 8px;
@@ -106,6 +259,7 @@ ul.lista{
    
 
 }
+
 ul li.itens{
     display:inline-block;
     vertical-align:top;
@@ -124,12 +278,14 @@ ul.lista2{
     display:inline-block;
     
 }
+
 ul li.icones{
     display:inline-block;
     vertical-align:top;
     padding: 10px;
     position: 10px;
 }
+
 h1{
     font-style: italic;
 	font-weight: bold;
