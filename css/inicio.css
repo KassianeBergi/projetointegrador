@@ -19,9 +19,10 @@
     width: 100%;
     list-style: none;
 }
-main{
+/* 
+main{ 
     height: 1080px;
-}
+} */
 
 a{ /* tirar a linha de baixo das listas */
     text-decoration: none;
@@ -34,13 +35,12 @@ body{ /* caracteres do menu  */
     background-color: rgb(255, 255, 255) ;
 }
 
-
-input[type="checkbox"]  
+input[type="checkbox"]  /* efeito do menu */
 {
     display: none;
 }
 
-input[type="checkbox"]:checked ~ nav  
+input[type="checkbox"]:checked ~ nav  /* efeito do menu */
 {
     transform: translateX(350px);
 } 
@@ -61,7 +61,7 @@ nav{ /* efeito do menu */
 }
 
 .menu a:hover{ /* efeito do menu */
-    background-color: #0099ff;
+    background-color: #00A80C;
     color: black;
 }
 
@@ -71,12 +71,13 @@ label{ /* efeito do menu */
     z-index: 1;
 } 
 
-#icone{
+#icone{ /* Fazer a três barras do menu*/
     display: block;
     border-top: 2px solid;
     width: 20px;
     color: rgb(255, 255, 255);
 }
+
 #icone::after, #icone::before{
     content: '';
     display: block;
@@ -87,23 +88,23 @@ label{ /* efeito do menu */
     transition: 0.7s;
     position: relative;
 }
-#nav.active #icone {
+#checkbox.active #icone {
     border-top-color: transparent;
 }
-#nav.active #icone::before {
+#checkbox.active #icone::before {
     transform: rotate(135deg);
 }
-#nav.active #icone::after {
+#checkbox.active #icone::after {
     transform: rotate(-135deg);
 }
 
-.tempo{
+.tempo{ /*Posicionamento do campo tempo*/
     top: 150px;
     height: 60px;
     background-color: rgb(255, 255, 255);
 }
 
-#data-hora {
+#data-hora { /*Dimensões e caracteristicas da data e hora*/
     margin-left: auto;
     margin-right: auto;
     height: 60px;
@@ -117,11 +118,22 @@ label{ /* efeito do menu */
     color:rgb(0, 0, 0);
 }
 
-.estacionamento-urls{
-    right: 250px;
+.conteiner{  /* Dividindo a primeira parte do estacionamento*/
+    display: flex;
+    margin-left: 160px;
+    margin-bottom: 100px;
+    margin-right: 160px;
 }
 
-.estacionamento {
+.cal-100{ 
+    width: 100%;
+}
+
+.estacionamento-urls{
+    right: 750px;
+}
+
+.estacionamento { /* Estaciomanto superior esquerdo*/
     margin-top: 150px;
     margin-bottom: 150px;
     margin-left: 100px;
@@ -135,7 +147,7 @@ label{ /* efeito do menu */
     border-top-style: initial;
 }
 
-.vaga-superior{
+.vaga-superior{ /*Caracteres e dimensões das vagas do estaciomento superior esquerdo*/
     display: inline-block;
     width: 70px;
     height: 95px;
@@ -148,28 +160,16 @@ label{ /* efeito do menu */
     text-align:justify;
 }
 
-/* .vaga-moto{
-    display: inline-flex;
-    width: 70px;
-    height: 95px;
-    border: 2px solid #dde2ea;
-    background-color: #edf0f4;
-    border-bottom-style: hidden;
-    border-style: dashed;
-    text-align:justify;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;   
-}  */
-
-.estacionamento ul li a{
+.estacionamento ul li a{ /*Caracteres e dimensões das vagas do estaciomento superior esquerdo*/ 
     margin-right: 100px;
     text-decoration: none;
     color: rgba(75, 74, 74, 0.425);
     margin-left: 20px;
 }
-.estacionamento-id{
+
+.estacionamento-ie { /*Estaciomento inferior esquerdo*/
     margin-top: 110px;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     margin-left: 100px;
     width: 630px;
     height: 117px;
@@ -180,7 +180,8 @@ label{ /* efeito do menu */
     border-left-style: initial;
     border-bottom-style: initial;
 } 
-.vaga-inferior{
+
+.vaga-inferior{ /*Caracteres e dimensões das vagas do estaciomento inferior esquerdo*/
     display: inline-block;
     width: 70px;
     height: 95px;
@@ -192,48 +193,111 @@ label{ /* efeito do menu */
     border-style: dashed;
     text-align:justify;
 }
-.estacionamento-id ul li a{
+
+.estacionamento-ie ul li a{ /*Caracteres e dimensões das vagas do estaciomento inferior esquerdo*/ 
     margin: 5px;
     width: auto;
     text-decoration: none;
     color: rgba(75, 74, 74, 0.425);
     margin-left: 20px;
 }
-.estacionamento-se{
-   
+
+.cal-200{ 
+    width: 100%;
+    float:none;
 } 
-.estacionamento-se{
-    margin-top: 229px;
-    margin-left: 500px;
-    margin-bottom: 250px;
+
+.estacionamento-urlr{ 
+    width: 850px;
+    right: 250px; 
+}
+
+.estacionamento-sd{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 100px;
     width: 630px;
-    height: 117px;
-    border:  2px solid rgb(0, 0, 0);
+    height: 324px;
+    border:  3px solid rgb(0, 0, 0);
     background-color: rgb(255, 254, 254);
     padding: 2px;
-    padding-bottom: 250px;
+    padding-top: 220px;
     border-right-style: initial;
     border-top-style: initial;
-}  */
-.vagasuperioresquerda{
+}  
+
+.vagasuperiordireita{
     display: inline-block;
     width: 70px;
     height: 95px;
-    border: 2px solid #dde2ea;
-    margin: 5px;
+    border: 1px solid #4d4e44;
+    margin: 1px;
     margin-top: initial; 
-    background-color: #edf0f4;
+    background-color: #e0e3e6;
     border-bottom-style: hidden;
     border-style: dashed;
     text-align:justify;
 }
-.estacionamento-se ul li a{
-    margin: 5px;
-    width: auto;
+
+.estacionamento-sd ul li a{
+    margin-right: 100px;
     text-decoration: none;
-    color: rgba(151, 149, 149, 0.425);
+    color: rgba(75, 74, 74, 0.425);
     margin-left: 20px;
 }   
+
+.estacionamento-id{ /* adicionado */
+    margin-top: 110px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    width: 680px;
+    height: 117px;
+    border:  3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 254, 254);
+    padding: 2px;
+    padding-bottom: 300px;
+    border-right-style: initial;
+    border-bottom-style: initial;
+} 
+
+.vagainferiordireita{ /* adicionado */
+    display: inline-block;
+    width: 70px;
+    height: 95px;
+    border: 1px solid #4d4e44;
+    margin: 2px;
+    margin-top: initial; 
+    background-color: #e0e3e6;
+    border-bottom-style: hidden;
+    border-style: dashed;
+    text-align:justify;
+}
+
+.estacionamento-id ul li a{  /* adicionado */
+    margin-right: 100px;
+    text-decoration: none;
+    color: rgba(75, 74, 74, 0.425);
+    margin-left: 20px;
+} 
+
+.informacoes { /*adicionado */
+    text-align: center;
+}
+
+.atributos a{ /*adicionado */
+    position: relative;
+    padding-left: 8px;
+    color: rgb(0, 0, 0);
+}
+
+ul li.atributos{  /*adicionado */
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
 
 footer{ /* dimensoes do rodape */
     height: 100%;
