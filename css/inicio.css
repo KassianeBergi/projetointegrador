@@ -9,6 +9,41 @@
     height: 60px;
 }
 
+.login{
+    float: right;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); 
+    border: 2px solid #4CAF50;
+}
+
+.login:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.login li{
+    list-style-type: none;
+}
+
+.login a{
+    color:white;
+}
+
+
 .logo{ /* direcionar da logo */
     padding-left: 60px;
 }
@@ -19,10 +54,6 @@
     width: 100%;
     list-style: none;
 }
-/* 
-main{ 
-    height: 1080px;
-} */
 
 a{ /* tirar a linha de baixo das listas */
     text-decoration: none;
@@ -310,6 +341,7 @@ p{ /* estilo do p */
     color: white;
     padding-left:8px;
     text-align: center;
+    padding-bottom: 8px;
 }
 
 ul.lista{
