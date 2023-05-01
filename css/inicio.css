@@ -9,9 +9,9 @@
     height: 60px;
 }
 
-.login{
+.login{ /* estilo do campo login */
     float: right;
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 16px 32px;
@@ -24,22 +24,22 @@
     cursor: pointer;
 }
 
-.login {
+.login { /* estilo do campo login */
     background-color: rgb(0, 0, 0); 
     color: rgb(0, 0, 0); 
     border: 2px solid #4CAF50;
 }
 
-.login:hover {
+.login:hover { /* efeito do campo login */
     background-color: #4CAF50;
     color: white;
 }
 
-.login li{
+.login li{ /* estilo do campo login */
     list-style-type: none;
 }
 
-.login a{
+.login a{ /* estilo da cor do texto login */
     color:white;
 }
 
@@ -102,14 +102,14 @@ label{ /* efeito do menu */
     z-index: 1;
 } 
 
-#icone{ /* Fazer a três barras do menu*/
+#icone{ /*Fazer a três barras do menu*/
     display: block;
     border-top: 2px solid;
     width: 20px;
     color: rgb(255, 255, 255);
 }
 
-#icone::after, #icone::before{
+#icone::after, #icone::before{  /*efeito para fazer as três barras do menu*/
     content: '';
     display: block;
     width: 20px;
@@ -119,13 +119,13 @@ label{ /* efeito do menu */
     transition: 0.7s;
     position: relative;
 }
-#checkbox.active #icone {
+#checkbox.active #icone { /*efeito para fazer as três barras do menu vira um x*/
     border-top-color: transparent;
 }
-#checkbox.active #icone::before {
+#checkbox.active #icone::before { /*efeito para fazer as três barras do menu vira um x*/
     transform: rotate(135deg);
 }
-#checkbox.active #icone::after {
+#checkbox.active #icone::after { /*efeito para fazer as três barras do menu vira um x*/
     transform: rotate(-135deg);
 }
 
@@ -156,11 +156,11 @@ label{ /* efeito do menu */
     margin-right: 160px;
 }
 
-.cal-100{ 
+.cal-100{ /* Dimensionamento do estacionamento do lado esquerdo da tela*/
     width: 100%;
 }
 
-.estacionamento-urls{
+.estacionamento-urls{ /* Dimensionamento do estacionamento do lado esquerdo da tela*/
     right: 750px;
 }
 
@@ -233,17 +233,17 @@ label{ /* efeito do menu */
     margin-left: 20px;
 }
 
-.cal-200{ 
+.cal-200{ /* Dimensionamento do estacionamento do lado direito da tela*/
     width: 100%;
     float:none;
 } 
 
-.estacionamento-urlr{ 
+.estacionamento-urlr{ /* Dimensionamento do estacionamento do lado direito da tela*/
     width: 850px;
     right: 250px; 
 }
 
-.estacionamento-sd{
+.estacionamento-sd{ /* caracteres do estaciomanto superior direito*/
     margin-top: 150px;
     margin-bottom: 150px;
     margin-left: 100px;
@@ -257,7 +257,7 @@ label{ /* efeito do menu */
     border-top-style: initial;
 }  
 
-.vagasuperiordireita{
+.vagasuperiordireita{ /*Caracteres e dimensões das vagas do estaciomento superior direito*/
     display: inline-block;
     width: 70px;
     height: 95px;
@@ -270,14 +270,14 @@ label{ /* efeito do menu */
     text-align:justify;
 }
 
-.estacionamento-sd ul li a{
+.estacionamento-sd ul li a{ /*Caracteres e dimensões das vagas do estaciomento superior direito*/ 
     margin-right: 100px;
     text-decoration: none;
     color: rgba(75, 74, 74, 0.425);
     margin-left: 20px;
 }   
 
-.estacionamento-id{ /* adicionado */
+.estacionamento-id{ /* caracteres do estaciomanto inferior direito*/
     margin-top: 110px;
     margin-bottom: 50px;
     margin-left: 100px;
@@ -291,7 +291,7 @@ label{ /* efeito do menu */
     border-bottom-style: initial;
 } 
 
-.vagainferiordireita{ /* adicionado */
+.vagainferiordireita{ /*Caracteres e dimensões das vagas do estaciomento inferior direito*/
     display: inline-block;
     width: 70px;
     height: 95px;
@@ -304,24 +304,24 @@ label{ /* efeito do menu */
     text-align:justify;
 }
 
-.estacionamento-id ul li a{  /* adicionado */
+.estacionamento-id ul li a{ /*Caracteres e dimensões das vagas do estaciomento inferior direito*/
     margin-right: 100px;
     text-decoration: none;
     color: rgba(75, 74, 74, 0.425);
     margin-left: 20px;
 } 
 
-.informacoes { /*adicionado */
+.informacoes { /*centralização da legenda do estacionamento */
     text-align: center;
 }
 
-.atributos a{ /*adicionado */
+.atributos a{ /*caracteristicas da legenda */
     position: relative;
     padding-left: 8px;
     color: rgb(0, 0, 0);
 }
 
-ul li.atributos{  /*adicionado */
+ul li.atributos{  /*caracteristicas da legenda */
     display:inline-block;
     vertical-align:top;
     padding: 10px;
@@ -344,19 +344,17 @@ p{ /* estilo do p */
     padding-bottom: 8px;
 }
 
-ul.lista{
+ul.lista{ /* centralização do menu no rodapé*/
     text-align: center;
 }
 
-.itens a{
+.itens a{ /* caracteres do menu no rodapé*/
     position: relative;
     padding-left: 8px;
     color: white;
-   
-
 }
 
-ul li.itens{
+ul li.itens{ /* caracteres do menu no rodapé*/
     display:inline-block;
     vertical-align:top;
     padding: 10px;
@@ -364,27 +362,26 @@ ul li.itens{
     text-align: center;
 }
 
-.redessociais{
+.redessociais{ /* centralização da lista da redes sociais no rodapé*/
     text-align: center;
 }
 
-ul.lista2{
+ul.lista2{ /* caracteres e posicionamento da lista com as imagens das redes sociais no rodapé*/
     position: relative;
     padding-left: 8px;
-    display:inline-block;
-    
+    display:inline-block;  
 }
 
-ul li.icones{
+ul li.icones{ /* caracteres e posicionamento da lista com as imagens das redes sociais no rodapé*/
     display:inline-block;
     vertical-align:top;
     padding: 10px;
     position: 10px;
 }
 
-h1{
+/* h1{
     font-style: italic;
 	font-weight: bold;
 	font-size: 30px;
 	font-family: Helvetica;
-}
+} */
