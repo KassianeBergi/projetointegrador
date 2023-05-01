@@ -1,0 +1,241 @@
+*{ /*deixar as dimensões padrões */
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.header-1{ /* estilo do primeiro cabeçario */
+    background-color: black;
+    height: 60px;
+}
+/*
+.logo{ /* direcionar a logo ao lado das três barras  *
+    padding-left: 60px;
+}
+*/
+.menu{ /* formatando a lista */
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+}
+
+a{ /* tirar a linha de baixo das listas */
+    text-decoration: none;
+}
+
+.menubody{ /* caracteres do menu  */
+    top: 60px;
+    font-family: Arial;
+    background-color: #00A80C ;
+}
+
+input[type="checkbox"]  /* efeito do menu */
+{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav  /* efeito do menu */
+{
+    transform: translateX(350px);
+}
+
+nav{ /* efeito do menu */
+    background-color:rgba(160, 172, 170, 0.432);
+    width: 350px;
+    left: -350px;
+    height: 400px;
+    position: absolute;
+    transition: all 0.5s;  
+}
+
+.menu a{ /* efeito do menu */
+    display: block;
+    padding: 20px 5px;
+    color:white;
+}
+
+.menu a:hover{ /* efeito do menu */
+    background-color: #0099ff;
+    color: black;
+}
+
+.menulabel{ /* efeito do menu */
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.meio{ /* posicionamento do meio da tela */
+    padding: 40%;
+}
+
+footer{ /* dimensoes do rodape */
+    height: 100%;
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 50px;  
+}
+p{ /* estilo do p */
+    color: white;
+    padding-left:8px;
+}
+
+ul.lista{ /*editando rodape*/
+    text-align: center;
+}
+.itens a{ /*editando rodape*/
+    position: relative;
+    padding-left: 8px;
+    color: white;
+   
+
+}
+ul li.itens{ /*editando rodape*/
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.redessociais{ /*editando rodape*/
+    text-align: center;
+}
+
+ul.lista2{ /*editando rodape*/
+    position: relative;
+    padding-left: 8px;
+    display:inline-block;
+    
+}
+ul li.icones{ /*editando rodape*/
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    position: 10px;
+}
+.bodyform{ /*editando a pagina*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A80C;
+}
+.container{ /*editando o container total*/
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+.form-image{ /*editando a imagem*/
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.form-image{ /*editando a imagem*/
+    width: 31rem;
+}
+.form{ /*alinhando textos e caixas de entrada*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+.form-header{ /*editando titulo do container*/
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+} 
+.form-header h1::after{ /*editando e aplicando a linha embaixo de h1*/
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 0.3rem;
+    background-color: green;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input-group{ /*editando caixas de entrada*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.input-box{ /*editando caixas de entrada*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+.input-box input{ /*editando caixas de entrada*/
+    margin: 0.2rem 0;
+    padding: 0.5rem 1.3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover{ /*aplicando evento na caixa de entrada*/
+    background-color: #eeeeee75;
+}
+.input-box input:focus-visible{ /*aplicando evento na caixa de entrada*/
+    outline: 1px solid green;
+}
+.input-box label{ /*editando descricao das caixas de entrada*/
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+    font-size: 15px;
+}
+.input-box input::placeholder{ /*aplicando efeito na caixa de entrada*/
+    color: #000000be;
+}
+.continue-button button{ /*editando botao*/
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: green;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continue-button button a{ /*editando botao*/
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*deixando responsivo*/
+
+@media screen and (max-width: 1330px) {
+    .form-image{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1064px) {
+    .container{
+        width: 98%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+}

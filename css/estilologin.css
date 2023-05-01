@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{ /*deixar as dimensões padrões */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-1{ /* estilo do primeiro cabeçario */
+    background-color: black;
+    height: 60px;
+}
+.logo{ /* direcionar a logo ao lado das três barras  */
+    padding-left: 5px;
+}
+body{ /* caracteres do menu  */
+    top: 60px;
+    font-family: Arial;
+    background-color: #00A80C ;
+}
+footer{ /* dimensoes do rodape */
+    height: 100%;
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 50px;  
+}
+.footerp{ /* estilo do p do rodape */
+    color: white;
+    padding-left:8px;
+}
+
+ul.lista{ /*editando rodape*/
+    text-align: center;
+}
+.itens a{ /*editando rodape*/
+    position: relative;
+    padding-left: 8px;
+    color: white;
+   
+
+} 
+ul li.itens{ /*editando rodape*/
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.redessociais{ /*editando rodape*/
+    text-align: center;
+}
+
+ul.lista2{ /*editando rodape*/
+    position: relative;
+    padding-left: 8px;
+    display:inline-block;
+    
+} 
+ul li.icones{ /*editando rodape*/
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    position: 10px;
+} 
+section{ /*centralizando as informações de login*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+} 
+.form-box{ /*criando uma margem em volta*/
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+h2{ /*editando h2*/
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{  /*editando caixa de entrada*/
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{  /*editando caixa de entrada e posição*/
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+} 
+.inputbox input{ /*editando caixa de entrada*/
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+} 
+.inputbox ion-icon{ /*editando os icones*/
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+} /*animacao nas caixas de entrada*/
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+} 
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{ /*editando 'lembrar usuario'*/
+    margin-right: 3px;
+} 
+.forget label a{
+    color: #fff;
+    text-decoration: none; 
+} 
+.forget label a:hover{
+    text-decoration: underline;
+} 
+
+button{ /*editando o botao*/
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+} 
+.register{ /*alinhando nao tenho cadastro cadastrar*/
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+} 
+.register p a{ /*editando escrita*/
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+}
+.register p a:hover{ /*aplicando evento em cadastrar*/
+    text-decoration: underline;
+}
+
+h4{ /* estilo do p */
+    color: white;
+    padding-left:8px;
+    text-align: center;
+    padding-bottom: 8px;
+    text-decoration: none;
+}

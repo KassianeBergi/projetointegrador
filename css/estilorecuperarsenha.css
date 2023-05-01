@@ -1,0 +1,196 @@
+*{ /*deixar as dimensões padrões */
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+} 
+.header-1{ /* estilo do primeiro cabeçario */
+    background-color: black;
+    height: 60px;
+}
+.logo{ /* direcionar a logo ao lado das três barras  */
+    padding-left: 5px;
+}
+
+a{ /* tirar a linha de baixo das listas */
+    text-decoration: none;
+}
+footer{ /* dimensoes do rodape */
+    height: 100%;
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 50px;  
+}
+.footerp{ /* estilo do p */
+    color: white;
+    padding-left:8px;
+}
+
+ul.lista{ /*editando rodape*/
+    text-align: center;
+}
+.itens a{ /*editando rodape*/
+    position: relative;
+    padding-left: 8px;
+    color: white;
+}
+ul li.itens{ /*editando rodape*/
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.redessociais{ /*editando rodape*/
+    text-align: center;
+}
+
+ul.lista2{ /*editando rodape*/
+    position: relative;
+    padding-left: 8px;
+    display:inline-block;
+    
+}
+ul li.icones{ /*editando rodape*/
+    display:inline-block;
+    vertical-align:top;
+    padding: 10px;
+    position: 10px;
+} 
+.bodyform{ /*editando rodape*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A80C;
+}
+.container{ /*editando container central*/
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+.form-image{ /*ajustando texto e imagem dentro do conteiner*/
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+} 
+.form-image{ /*ajustando imagem no container*/
+    width: 31rem;
+} 
+.form{ /*editando parte escrita dentro do container*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+.form-header{ /*editanto titulo do container*/
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between; 
+}
+.form-header h1::after{ /*aplicando a linha embaixo de h1*/
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 0.3rem;
+    background-color: green;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input-group{ /*editando caixas de entrada*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.input-box{ /*editando caixa de entrada*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+.input-box input{ /*editando caixa de entrada*/
+    margin: 0.5rem 0;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 1.5px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover{ /*aplicando evento na caixa de entrada*/
+    background-color: #eeeeee75;
+}
+.input-box input:focus-visible{ /*editando caixa de entrada*/
+    outline: 1px solid green;
+}
+.input-box label{ /*editando email*/
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+    font-size: 15px;
+}
+.input-box input::placeholder{ /*editando descricao da caixa de entrada*/
+    color: #000000be;
+}
+.continue-button button{ /*editando o botao*/
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    background-color: green;
+    padding: 0.63rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continue-button button a{ /*editando o botao*/
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+.stylep{ /*editando a frase p*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*deixando responsivo*/
+@media screen and (max-width: 1330px) {
+    .form-image{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1064px) {
+    .container{
+        width: 98%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+}
+
+h4{ /* estilo do p */
+    color: white;
+    padding-left:8px;
+    text-align: center;
+    padding-bottom: 8px;
+    text-decoration: none;
+}

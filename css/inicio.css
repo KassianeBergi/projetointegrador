@@ -379,9 +379,10 @@ ul li.icones{ /* caracteres e posicionamento da lista com as imagens das redes s
     position: 10px;
 }
 
-/* h1{
-    font-style: italic;
-	font-weight: bold;
-	font-size: 30px;
-	font-family: Helvetica;
-} */
+h4{ /* estilo do p */
+    color: white;
+    padding-left:8px;
+    text-align: center;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
