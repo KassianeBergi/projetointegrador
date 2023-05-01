@@ -239,3 +239,11 @@ ul li.icones{ /*editando rodape*/
         padding-right: 5rem;
     }
 }
+
+h4{ /* estilo do p */
+    color: white;
+    padding-left:8px;
+    text-align: center;
+    padding-bottom: 8px;
+    text-decoration: none;
+}

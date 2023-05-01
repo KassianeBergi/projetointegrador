@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family= Dancing familia= Pacifico & display=swap');
-
 *{ /*deixar as dimensões padrões */
     padding: 0px;
-    margin: auto;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -30,7 +28,7 @@ a{ /* tirar a linha de baixo das listas */
 body{ /* caracteres do menu  */
     top: 60px;
     font-family: Arial;
-    background-color: #00A80C ;
+    background-color: #d7dddb (216, 140, 235, 0.664) ;
 }
 
 input[type="checkbox"]  /* efeito do menu */
@@ -69,30 +67,33 @@ label{ /* efeito do menu */
     z-index: 1;
 }
 .meio{ /* posicionamento do meio da tela */
-    padding: 40%;
+    padding: 5%;
+    
 }
 
 footer{ /* dimensoes do rodape */
     height: 100%;
     background-color: black;
     padding-top: 8px;
-    padding-bottom: 50px;  
+    
 }
 p{ /* estilo do p */
-    color: white;
+    color: rgb(109, 106, 106);
     padding-left:8px;
+    padding-bottom: 5px;  
+    top: 5px;
+    padding-top: 5px;
 }
-ul.lista{ /*editando conteudo do rodape*/
+
+ul.lista{
     text-align: center;
 }
-.itens a{ /*editando conteudo do rodape*/
+.itens a{
     position: relative;
     padding-left: 8px;
     color: white;
-   
-
 }
-ul li.itens{ /*editando conteudo do rodape*/
+ul li.itens{
     display:inline-block;
     vertical-align:top;
     padding: 10px;
@@ -100,54 +101,92 @@ ul li.itens{ /*editando conteudo do rodape*/
     text-align: center;
 }
 
-.redessociais{ /*editando conteudo do rodape*/
+.redessociais{
     text-align: center;
 }
 
-ul.lista2{ /*editando conteudo do rodape*/
+ul.lista2{
     position: relative;
     padding-left: 8px;
     display:inline-block;
     
 }
-ul li.icones{ /*editando conteudo do rodape*/
+ul li.icones{
     display:inline-block;
     vertical-align:top;
     padding: 10px;
     position: 10px;
 }
-h1{ /*editando o titulo h1*/
-	font-family: 'Pacifico', 'cursive';
-    text-align: justify;
-}
-
-#img{ /*editando a imagem abaixo do cabecario*/
-    aspect-ratio: 1920/350;
-    width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 4px 5px #000000;
-}
-#divcenter { /*editando conteudo da pagina*/
-    padding: 30px;
-    text-align: justify;
-}
-
-#valoresul{ /*editando lista de valores*/
-    color: white;
-    padding-left:8px;    
-}
-
-#imgdirigindo{ /*editando imagem que faz parte do conteudo divcenter*/
-    float: left;
-    padding: 8px;
-    margin-right: 15px;
-    box-shadow: 1px 1px 2px 3px green;
-}
-
 h4{ /* estilo do p */
     color: white;
     padding-left:8px;
     text-align: center;
     padding-bottom: 8px;
     text-decoration: none;
+}
+
+.titulo_atendimento{ /* estilo do título da página de atendimento*/
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #6acc6d;
+    color: white;
+    display: flex;
+    padding: 1em;
+       
+   
+}
+.organiza{ /* div de organização do conteúdo da página de atendimento(centralização, margin etc)*/
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 46.5em;
+ 
+}
+
+.diva { /* configuração da div direita contendo a parte de perguntas frequentes*/
+    /* border: 1px black solid; */
+    display: inline-block;
+    width: 50em;
+    margin: 3%;
+    margin-top: 3em;
+    
+}
+
+.divb{ /* configuração da div esquerda contendo formulário de dúvidas e sugestões*/
+
+    margin: auto;
+    display: inline-block;
+    
+    
+}
+
+.caixaformulario{ /*Estilo do formulário*/
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 1cm; 
+}
+
+input{ /*Estilo dos inputs de formulário*/
+    width: 10cm;
+    height: 1cm;
+    border-color: lightgray;
+    border-style:ridge;
+}
+
+.tag_p_perguntas{ /*Estilo do p em perguntas frequentes*/
+    width: 12cm;
+}
+
+.botao_formulario{ /*Estilo do botão*/
+    background-color: #4CAF50;
+    border: none;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
